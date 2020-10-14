@@ -79,9 +79,9 @@
 # Default values for cloudwatch_period are in seconds and equal to AWS defaults
 # Values for include_tags/exclude_tags are comma separated list of tags in key:value format (example: env:dev,env:test)
 
-#com.instana.plugin.aws:
-#  tagged-services-poll-rate: 300
-#  include_tags:
+com.instana.plugin.aws:
+  tagged-services-poll-rate: 60
+  include_tags: "STAGE:prod"
 #  exclude_tags:
 
 #com.instana.plugin.aws.beanstalk:
