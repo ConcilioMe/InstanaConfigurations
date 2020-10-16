@@ -79,89 +79,89 @@
 # Default values for cloudwatch_period are in seconds and equal to AWS defaults
 # Values for include_tags/exclude_tags are comma separated list of tags in key:value format (example: env:dev,env:test)
 
-com.instana.plugin.aws:
-  tagged-services-poll-rate: 60
+#com.instana.plugin.aws:
+#  tagged-services-poll-rate: 60
+#  include_tags: "STAGE:prod"
+#  exclude_tags:
+
+com.instana.plugin.aws.beanstalk:
+  enabled: false
+  cloudwatch_period: 60
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.dynamodb:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.ebs:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.ec:
+  enabled: false
+  cloudwatch_period: 60
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.ec2:
+  enabled: false
+  tags-poll-rate: 30
+
+com.instana.plugin.aws.elb:
+  enabled: false
+  cloudwatch_period: 60
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.emr:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.es:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.kinesis:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
+
+com.instana.plugin.aws.lambda:
+  enabled: true
+  cloudwatch_period: 300
   include_tags: "STAGE:prod"
-#  exclude_tags:
+  exclude_tags:
 
-#com.instana.plugin.aws.beanstalk:
-#  enabled: false
-#  cloudwatch_period: 60
-#  include_tags:
-#  exclude_tags:
+com.instana.plugin.aws.rds:
+  enabled: false
+  cloudwatch_period: 60
+  include_tags:
+  exclude_tags:
 
-#com.instana.plugin.aws.dynamodb:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
+com.instana.plugin.aws.s3:
+  enabled: false
+  cloudwatch_period: 60
+  include_tags:
+  exclude_tags:
 
-#com.instana.plugin.aws.ebs:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
+com.instana.plugin.aws.sqs:
+  enabled: false
+  cloudwatch_period: 300
+  include_tags:
+  exclude_tags:
 
-#com.instana.plugin.aws.ec:
-#  enabled: false
-#  cloudwatch_period: 60
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.ec2:
-#  enabled: false
-#  tags-poll-rate: 30
-
-#com.instana.plugin.aws.elb:
-#  enabled: false
-#  cloudwatch_period: 60
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.emr:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.es:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.kinesis:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.lambda:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.rds:
-#  enabled: false
-#  cloudwatch_period: 60
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.s3:
-#  enabled: false
-#  cloudwatch_period: 60
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.sqs:
-#  enabled: false
-#  cloudwatch_period: 300
-#  include_tags:
-#  exclude_tags:
-
-#com.instana.plugin.aws.xray:
-#  enabled: false
+com.instana.plugin.aws.xray:
+  enabled: false
 
 # ActiveMQ
 #com.instana.plugin.activemq:
